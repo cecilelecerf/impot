@@ -1,5 +1,5 @@
 <?php 
-require("./peopleClass.php");
+require("./class/peopleClass.php");
 
 
 class Impot extends People {

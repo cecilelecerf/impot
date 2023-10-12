@@ -7,6 +7,6 @@ class People {
     protected function __constructor($lastname, $firstname, $gender){
         $this->lastname = $lastname;
         $this->firstname = $firstname;
-        $this->gender = $gender
+        $this->gender = $gender;
     }
 }

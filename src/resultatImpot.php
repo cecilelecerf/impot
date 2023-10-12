@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <?php 
-require_once("./class/impot.php");
+require_once("./class/impotClass.php");
 $impot = new Impot((int)$_GET["revenu"]);
 ?>
 <body>

@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <?php 
-require_once("./class/impot.php");
-$impot = new Impot((int)$_GET["revenu"]);
+require_once("./class/impotClass.php");
+$impot = new Impot((int)$_GET["revenu"], $_GET["lastname"], $_GET["firstname"], (int)$_GET["gender"]);
 ?>
 <body>
     <h1>Resultat</h1>
-    <p><?php echo $impot->AfficheImpot($_GET["name"]) ?></p>
+    <p><?php echo $impot->AfficheImpot() ?></p>
 </body>
 </html>

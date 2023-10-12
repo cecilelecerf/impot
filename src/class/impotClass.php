@@ -9,6 +9,7 @@ class Impot extends People {
     const impot20 = 20;
 
     public static function __constructor(int $income){
+        parent::__constructor();
         $this->income = $income;
     }
 

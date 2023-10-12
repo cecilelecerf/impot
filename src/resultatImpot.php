@@ -7,11 +7,10 @@
 </head>
 <?php 
 require_once("./class/impot.php");
-
-$impot = new Impot($_GET["revenu"]);
+$impot = new Impot((int)$_GET["revenu"]);
 ?>
 <body>
     <h1>Resultat</h1>
-    <?php $impot->AfficheImpot($_GET["name"]) ?>
+    <p><?php echo $impot->AfficheImpot($_GET["name"]) ?></p>
 </body>
 </html>

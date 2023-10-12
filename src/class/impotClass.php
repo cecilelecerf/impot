@@ -1,6 +1,8 @@
 <?php 
+require("./peopleClass.php");
 
-class Impot {
+
+class Impot extends People {
     private $income;
 
     const impot15 = 15;
@@ -20,4 +22,3 @@ class Impot {
         return $prenom. "votre impot est de ". $this->calculImpot();
     }
 }
-?>

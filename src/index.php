@@ -15,7 +15,7 @@
 
         <div>
             <label for="revenu">Votre revenu annuel</label>
-            <input type="text" name="revenu" id="revenu">
+            <input type="number" name="revenu" id="revenu">
         </div>
         <button type="submit">Valider</button>
     </form>

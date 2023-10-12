@@ -14,9 +14,8 @@ class Impot extends People {
     }
 
     private function CalculImpot(){
-        $taux = 0;
-        $this->income < 15000 ? $taux = self::TAUX_FAIBLE :  $taux = self::TAUX_FORT;
-        return $this->income * $taux;
+        $sub = $this->income - 1500;
+        $sub < 0 ? return self::TAUX_FAIBLE * $this->income : return $sub * self::TAUX_FORT + 1500 * self::TAUX_FAIBLE;
     }
 
     public function AfficheImpot(){

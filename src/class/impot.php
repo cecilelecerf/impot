@@ -1,23 +1,23 @@
 <?php 
 
 class Impot {
-    private $income;
+    public $income;
 
-    const impot15 = 15;
-    const impot20 = 20;
+    const IMPOT15 = 15;
+    const IMPOT20 = 20;
 
-    public static function __constructor(int $income){
+    public function __construct(int $income){
         $this->income = $income;
     }
 
-    private function CalculImpot(){
+    public function CalculImpot(){
         $taux = 0;
-        $this->income < 15000 ? $taux = $this->impot15 :  $taux = $this->impot20;
-        return $this->income * ($taux/100);
+        $this->income < 15000 ? $taux = self::IMPOT15 :  $taux = self::IMPOT20;
+        return $this->income;
     }
 
-    protected function AfficheImpot(string $prenom){
-        return $prenom. "votre impot est de ". $this->calculImpot();
+    public function AfficheImpot(string $prenom){
+        return $prenom. "votre impot est de ". $this->CalculImpot();
     }
 }
 ?>

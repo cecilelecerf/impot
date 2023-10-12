@@ -13,13 +13,15 @@
             <input type="text" name="lastname" id="lastname">
         </div>
         <div>
-            <label for="firstname">Votre nom</label>
+            <label for="firstname">Votre prénom</label>
             <input type="text" name="firstname" id="firstname">
         </div>
         <div>
             <label for="gender">Votre genre</label>
-            <input type="radio" name="gender" value="men">
-            <input type="radio" name="gender" value="women">
+            <label for="men">Homme</label>
+            <input type="radio" name="gender" value="men" id="men">
+            <label for="women">Femme</label>
+            <input type="radio" name="gender" value="women" id="women">
         </div>
 
         <div>

@@ -4,7 +4,7 @@ class People {
     protected $firstname;
     protected $gender;
 
-    protected function __constructor($lastname, $firstname, $gender){
+    public function __construct(string $lastname, string $firstname, int $gender){
         $this->lastname = $lastname;
         $this->firstname = $firstname;
         $this->gender = $gender;

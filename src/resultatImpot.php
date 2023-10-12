@@ -8,13 +8,10 @@
 <?php 
 require_once("./class/impot.php");
 
-var_dump($_GET["name"]);
-$impot = new Impot($)
-
-
-
+$impot = new Impot($_GET["revenu"]);
 ?>
 <body>
     <h1>Resultat</h1>
+    <?php $impot->AfficheImpot($_GET["name"]) ?>
 </body>
 </html>
